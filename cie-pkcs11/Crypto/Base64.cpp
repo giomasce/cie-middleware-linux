@@ -4,6 +4,12 @@
 #include "../Cryptopp/cryptlib.h"
 #include "../Cryptopp/base64.h"
 
+#ifndef CRYPTOPP_NO_GLOBAL_BYTE
+namespace CryptoPP {
+    typedef ::byte byte;
+}
+#endif
+
 extern CLog Log;
 
 //#include <Wincrypt.h>

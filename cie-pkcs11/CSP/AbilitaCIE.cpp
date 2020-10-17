@@ -38,6 +38,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
+#include <cmath>
 
 #define ROLE_USER 1
 #define ROLE_ADMIN 2

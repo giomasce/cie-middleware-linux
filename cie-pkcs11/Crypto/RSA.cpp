@@ -4,6 +4,12 @@
 #include "../Util/util.h"
 
 
+#ifndef CRYPTOPP_NO_GLOBAL_BYTE
+namespace CryptoPP {
+    typedef ::byte byte;
+}
+#endif
+
 extern CLog Log;
 
 #ifdef WIN32
