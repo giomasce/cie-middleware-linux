@@ -44,7 +44,7 @@ namespace p11 {
 		pTemplate = NULL;
 		//slotMutex.Create(mutexName(szReader));
 		pSerialTemplate = NULL;
-		hCard = NULL;
+		hCard = 0;
 	}
 
 	CSlot::~CSlot() {

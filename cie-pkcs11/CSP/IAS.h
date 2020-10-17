@@ -113,7 +113,7 @@ public:
     void VerificaSODPSS(ByteArray &SOD, std::map<uint8_t, ByteDynArray> &hashSet);
 	void VerificaSOD(ByteArray &SOD, std::map<uint8_t, ByteDynArray> &hashSet);
 
-	void(*Callback)(int progress, char *desc,void *data);
+	void(*Callback)(int progress, const char *desc,void *data);
 	void* CallbackData;
 
 	// usato da CardUnblockPin per comunicare i tentativi di verifica del PUK rimasti

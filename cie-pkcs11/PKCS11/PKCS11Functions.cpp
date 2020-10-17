@@ -49,7 +49,7 @@ CK_MECHANISM_TYPE P11mechanisms[]= {
 };
 
 
-char *getAttributeName(unsigned long dwId);
+const char *getAttributeName(unsigned long dwId);
 //extern CModuleInfo moduleInfo; // informazioni sulla dll (o so)
 bool bModuleInit=false;
 
@@ -2125,7 +2125,7 @@ CK_RV CK_ENTRY C_GetFunctionStatus(CK_SESSION_HANDLE hSession) unsupported
 CK_RV CK_ENTRY C_CancelFunction(CK_SESSION_HANDLE hSession) unsupported
 
 
-char *getAttributeName(unsigned long dwId) {
+const char *getAttributeName(unsigned long dwId) {
 	switch (dwId) {
 		case 0x00000000: return("CKA_CLASS");
 		case 0x00000001: return("CKA_TOKEN");

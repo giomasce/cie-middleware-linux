@@ -373,8 +373,8 @@ long ByteArrayToInt(ByteArray &ba)
 //    return std::string(szWinErrBuffer);
 //}
 
-char *  CardErr(DWORD dwSW) {
-	char *msg;
+const char *  CardErr(DWORD dwSW) {
+	const char *msg;
 
 	switch (dwSW) {
 		case ERR_CARD_FILE_DEACTIVATED		: msg="File is deactivated"; break;

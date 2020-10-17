@@ -596,7 +596,7 @@ void* mythread(void* thr_data) {
 
 int sendMessage(const char* szCommand, const char* szParam)
 {
-	char* file = "/usr/share/CIEID/jre/bin/java";
+	const char* file = "/usr/share/CIEID/jre/bin/java";
 
 	if(!file_exists(file))
 		file = "java";
