@@ -20,7 +20,7 @@
 #include <string>
 #include "AbilitaCIE.h"
 #include <string>
-#include "../Cryptopp/misc.h"
+#include <crypto++/misc.h>
 
 extern "C" {
     CK_RV CK_ENTRY CambioPIN(const char*  szCurrentPIN, const char*  szNuovoPIN, int* pAttempts, PROGRESS_CALLBACK progressCallBack);

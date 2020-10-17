@@ -6,8 +6,8 @@
 #include <stdio.h>
 #include "../Crypto/AES.h"
 #include "../PCSC/PCSC.h"
-#include "../Cryptopp/cryptlib.h"
-#include "../Cryptopp/asn.h"
+#include <crypto++/cryptlib.h>
+#include <crypto++/asn.h>
 #include "../Util/CryptoppUtils.h"
 
 extern CLog Log;

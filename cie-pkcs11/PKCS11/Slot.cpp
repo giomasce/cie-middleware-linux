@@ -7,7 +7,7 @@
 #include "../Util/util.h"
 #include "../Util/SyncroEvent.h"
 #include <mutex>
-#include "../Cryptopp/misc.h"
+#include <crypto++/misc.h>
 
 extern CLog Log;
 

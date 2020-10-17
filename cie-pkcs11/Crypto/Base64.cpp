@@ -1,8 +1,8 @@
 
 #include "../PKCS11/wintypes.h"
 #include "Base64.h"
-#include "../Cryptopp/cryptlib.h"
-#include "../Cryptopp/base64.h"
+#include <crypto++/cryptlib.h>
+#include <crypto++/base64.h>
 
 #ifndef CRYPTOPP_NO_GLOBAL_BYTE
 namespace CryptoPP {
